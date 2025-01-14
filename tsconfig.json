@@ -9,9 +9,14 @@
     "resolveJsonModule": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
+    "baseUrl": "./",
+    "paths": {
+      "#config": [
+        "src/config.ts"
+      ],
+    }
   },
   "include": [
     "src",
-    "config.json"
   ]
 }

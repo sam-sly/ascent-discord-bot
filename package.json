@@ -7,9 +7,10 @@
   },
   "scripts": {
     "start": "node src/index.ts",
-    "dev": "ts-node-dev --respawn --clear --debug --poll src/index.ts"
+    "dev": "ts-node-dev --respawn --clear --debug --poll -r tsconfig-paths/register src/index.ts"
   },
   "devDependencies": {
-    "ts-node-dev": "^2.0.0"
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0"
   }
 }
