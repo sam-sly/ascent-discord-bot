@@ -8,7 +8,12 @@ const client = new SapphireClient({
     GatewayIntentBits.Guilds,
     GatewayIntentBits.GuildMessages,
   ],
-  loadMessageCommandListeners: true
+  loadMessageCommandListeners: true,
+  defaultCooldown: {
+    delay: 10_000,
+    filteredUsers: [Config.owner],
+    limit: 2,
+  }
 });
 
 client.login(Config.token);
